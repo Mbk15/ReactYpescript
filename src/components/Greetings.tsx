@@ -9,20 +9,9 @@ let Greetings: React.FC<Isprop> = () => {
   let [state, setState] = useState<Istate>({
     message: "Hello",
   });
-  let morning = () => {
+  let changeMessage = (greet: string) => {
     setState({
-      message: "Good Morning !",
-    });
-  };
-
-  let afternoon = () => {
-    setState({
-      message: "Good Afternoon !",
-    });
-  };
-  let night = () => {
-    setState({
-      message: "Good Night !",
+      message: greet,
     });
   };
   return (
@@ -35,19 +24,22 @@ let Greetings: React.FC<Isprop> = () => {
                 <p className="h3 display-2 text-center">{state.message} </p>
                 <button
                   className=" btn btn-success btn-lg m-1 "
-                  onClick={morning}
+                  onClick={() => changeMessage("Good Morning !")}
                 >
                   Good Morning
                 </button>
                 <button
                   className=" btn btn-warning btn-lg m-1"
-                  onClick={afternoon}
+                  onClick={() => changeMessage("Good Afternoon !")}
                 >
                   {" "}
                   Good Afternoon
                 </button>
 
-                <button className=" btn btn-danger btn-lg m-1" onClick={night}>
+                <button
+                  className=" btn btn-danger btn-lg m-1"
+                  onClick={() => changeMessage("Good Night !")}
+                >
                   {" "}
                   Good Night
                 </button>
