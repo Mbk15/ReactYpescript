@@ -4,6 +4,7 @@ import "./App.css";
 import Customer from "./components/Customer";
 import Employee from "./components/Employee";
 import Counter from "./components/Counter";
+import Greetings from "./components/Greetings";
 
 /*FontAwesome */
 
@@ -22,6 +23,7 @@ function App() {
           <div className="row">
             <div className="col">
               <Counter />
+              <Greetings />
               <p className="h3 text-success fw-bold">App component</p>
               <p className="fts-ialic"> Lorem ipsum dolerem sit ajib</p>
 
