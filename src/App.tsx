@@ -6,6 +6,7 @@ import Employee from "./components/Employee";
 import Counter from "./components/Counter";
 import Greetings from "./components/Greetings";
 import LoginForm from "./components/LoginForm";
+import UserList from "./components/UserList";
 /*FontAwesome */
 
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
@@ -44,6 +45,9 @@ function App() {
               </div>
             </div>
             <LoginForm />
+          </div>
+          <div>
+            <UserList />
           </div>
         </div>
       </div>
