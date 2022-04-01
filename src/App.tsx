@@ -7,6 +7,8 @@ import Counter from "./components/Counter";
 import Greetings from "./components/Greetings";
 import LoginForm from "./components/LoginForm";
 import UserList from "./components/UserList";
+
+import UserData from "./components/UserData";
 /*FontAwesome */
 
 import "../node_modules/@fortawesome/fontawesome-free/css/all.css";
@@ -48,6 +50,10 @@ function App() {
           </div>
           <div>
             <UserList />
+          </div>
+
+          <div>
+            <UserData />
           </div>
         </div>
       </div>
